@@ -11,25 +11,23 @@ function findMusic() {
         return;
     }
 
-    let searchText = "";
+    let validEmotions = [
+        "happy",
+        "sad",
+        "love",
+        "angry",
+        "relaxed"
+    ];
 
-    if (emotion === "happy") {
-        searchText = "happy songs";
+    if (!validEmotions.includes(emotion)) {
+        alert("Please enter only Happy, Sad, Love, Angry or Relaxed.");
+        return;
     }
-    else if (emotion === "sad") {
-        searchText = "sad songs";
-    }
-    else if (emotion === "love") {
-        searchText = "love songs";
-    }
-    else if (emotion === "angry") {
-        searchText = "angry songs";
-    }
-    else if (emotion === "relaxed") {
+
+    let searchText = emotion + " songs";
+
+    if (emotion === "relaxed") {
         searchText = "relaxing songs";
-    }
-    else {
-        searchText = emotion + " songs";
     }
 
     let youtubeURL =
@@ -39,22 +37,15 @@ function findMusic() {
     window.location.href = youtubeURL;
 }
 
-function stopOtherSongs(currentAudio) {
 
-    let allAudio = document.querySelectorAll("audio");
-
-    allAudio.forEach(audio => {
-
-        if (audio !== currentAudio) {
-            audio.pause();
-            audio.currentTime = 0;
-        }
-
-    });
-}
+// Show / Hide songs
 function showSongs(emotion) {
 
     let songList = document.getElementById(emotion + "Songs");
+
+    if (!songList) {
+        return;
+    }
 
     if (songList.style.display === "block") {
         songList.style.display = "none";

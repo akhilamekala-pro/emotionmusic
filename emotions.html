@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Emotions - EmotionMusic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>Emotion</span><b>Music</b>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="emotions.html" class="active">
+                Emotions
+            </a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- EMOTIONS -->
+
+    <main>
+
+        <section class="emotions-section">
+
+            <h1>My Emotions 🎭</h1>
+
+            <p class="intro">
+                Choose an emotion and discover music
+                that matches your mood.
+            </p>
+
+
+            <div class="emotion-cards">
+
+
+                <!-- HAPPY -->
+
+                <div class="emotion-card">
+
+                    <h2>😊 Happy</h2>
+
+                    <p>
+                        Happy songs can make you feel joyful,
+                        positive and energetic.
+                    </p>
+
+                    <button type="button"
+                            onclick="showSongs('happy')">
+
+                        🎵 Play Happy Music
+
+                    </button>
+
+                    <div id="happySongs"
+                         class="song-list">
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Happy Song 1
+                        </a>
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Happy Song 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SAD -->
+
+                <div class="emotion-card">
+
+                    <h2>😢 Sad</h2>
+
+                    <p>
+                        Sad songs express deep feelings and
+                        help you connect with your emotions.
+                    </p>
+
+                    <button type="button"
+                            onclick="showSongs('sad')">
+
+                        🎵 Play Sad Music
+
+                    </button>
+
+                    <div id="sadSongs"
+                         class="song-list">
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Sad Song 1
+                        </a>
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Sad Song 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOVE -->
+
+                <div class="emotion-card">
+
+                    <h2>❤️ Love</h2>
+
+                    <p>
+                        Love is a warm and beautiful emotion
+                        connected with care, affection and relationships.
+                    </p>
+
+                    <button type="button"
+                            onclick="showSongs('love')">
+
+                        🎵 Play Love Music
+
+                    </button>
+
+                    <div id="loveSongs"
+                         class="song-list">
+
+                        <a href="https://open.spotify.com/track/5JnXwEckWO0oFijOyTZDLf"
+                           target="_blank">
+
+                            🎵 Love Song 1
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANGRY -->
+
+                <div class="emotion-card">
+
+                    <h2>😡 Angry</h2>
+
+                    <p>
+                        Powerful music to express anger
+                        and strong emotions.
+                    </p>
+
+                    <button type="button"
+                            onclick="showSongs('angry')">
+
+                        🎵 Play Angry Music
+
+                    </button>
+
+                    <div id="angrySongs"
+                         class="song-list">
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Angry Song 1
+                        </a>
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Angry Song 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RELAXED -->
+
+                <div class="emotion-card">
+
+                    <h2>😌 Relaxed</h2>
+
+                    <p>
+                        Calm and peaceful music to help
+                        you relax and feel comfortable.
+                    </p>
+
+                    <button type="button"
+                            onclick="showSongs('relaxed')">
+
+                        🎵 Play Relaxed Music
+
+                    </button>
+
+                    <div id="relaxedSongs"
+                         class="song-list">
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Relaxed Song 1
+                        </a>
+
+                        <a href="#"
+                           target="_blank">
+                            🎵 Relaxed Song 2
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        💜 “Music is what feelings sound like” 💜
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
